@@ -2,7 +2,7 @@ TAX_RATE = 0.21
 
 def average(prices):
     if not prices:
-        return 0
+        return None
     return sum(prices) / len(prices)
 
 def total(prices):
