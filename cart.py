@@ -1,4 +1,4 @@
-TAX_RATE = 0.19
+TAX_RATE = 0.21
 
 def average(prices):
     if not prices:
