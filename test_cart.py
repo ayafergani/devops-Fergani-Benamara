@@ -11,3 +11,5 @@ def test_shipping_small_cart():
     assert shipping([20]) == 5
 def test_shipping_big_cart():
     assert shipping([100]) == 0
+def test_shipping_free_from_50():
+    assert shipping([50]) == 0
