@@ -1,5 +1,5 @@
 import pytest
-
+from stats import most_expensive
 from cart import average, shipping, total, apply_discount
 def test_average():
     assert average([10, 20]) == 15
@@ -18,3 +18,8 @@ def test_shipping_free_from_50():
 def test_discount_over_100_is_refused():
     with pytest.raises(ValueError):
         apply_discount([100], 150)
+
+def test_most_expensive():
+    assert most_expensive([10, 50, 20]) == 50
+def test_most_expensive_empty_cart():
+    assert most_expensive([]) is None
