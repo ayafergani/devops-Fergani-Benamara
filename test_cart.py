@@ -1,7 +1,9 @@
 import pytest
+
+from cart import apply_discount, average, shipping, total
 from stats import most_expensive
 
-from cart import average, shipping, total, apply_discount
+
 def test_average():
     assert average([10, 20]) == 15
 def test_average_empty_cart():
