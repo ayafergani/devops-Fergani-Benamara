@@ -5,7 +5,7 @@ import os
 
 from cart import shipping, total
 
-ITEMS = {"Notebook": 4, "Pen": 2, "Backpack": 45}
+ITEMS = {"Notebook": 4, "Pen": 2, "Backpack": 45 ,"Ruler": 3}
 VERSION = os.environ.get("GITHUB_SHA", "dev")[:7]
 
 
